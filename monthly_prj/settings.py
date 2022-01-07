@@ -125,6 +125,7 @@ STATICFILES_DIRS=[
 ] #static 파일들이 어디에 있는지를 쓰는곳
 STATIC_ROOT= os.path.join(BASE_DIR,'static')
 
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
