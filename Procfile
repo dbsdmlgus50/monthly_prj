@@ -1,0 +1,2 @@
+
+web: gunicorn monthly_prj.wsgi --log-file -

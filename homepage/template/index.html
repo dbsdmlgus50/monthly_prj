@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Full Width Pics - Start Bootstrap Template</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#!">EDA Project</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                </div>
+            </div>
+        </nav>
+        <!-- Header - set the background image for the header in the line below-->
+        <header class="py-5 bg-image-full" style="background-image: url('https://source.unsplash.com/wfh8dDlNFOk/1600x900')">
+            <div class="text-center my-5">
+                <img class="img-fluid rounded-circle mb-4" src="{% static 'assets/self.jpg' %}" width = 200 />
+                <h1 class="text-white fs-3 fw-bolder"> StudentsPerformance-EDA </h1>
+                
+            </div>
+        </header>
+        <!-- Content section-->
+        <section class="py-5">
+            <div class="container my-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <h2>Dataset 살펴보기</h2>
+                        <img src = "{% static 'assets/table.png' %}">
+                        <h4>다양한 데이터가 존재하며 가장 궁금한 keyword 는 gender, preparation, parental level 이다.</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="container my-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <h2>상관계수 살펴보고 히트맵 그리기</h2>
+                        <img src = "{% static 'assets/corr.png' %}">
+                        <h4> 히트맵 으로 봤을시 reading 과 writing 은 비슷한 점수대 임을 보여준다</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="container my-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <h2>상관계수 에 따른 kde plotting</h2>
+                        <img src = "{% static 'assets/kde.png' %}">
+                        <h4>kde plot 으로 증명</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="container my-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <h2>시험 준비를 한 학생과 안한 학생의 차이</h2>
+                        <img src = "{% static 'assets/kde_2.png' %}">
+                        <img src = "{% static 'assets/bar.png' %}">
+                        <h4> 준비를 한 학생은 상당한 점수를 획득</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container my-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <h2>부모의 학위에 따른 차이</h2>
+                        <img src = "{% static 'assets/parental_level.png' %}">
+                        <h4> 전체적으로 master's degree 의 자녀 들이 고득점</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container my-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <h2>Gender 에 따른 차이</h2>
+                        <img src = "{% static 'assets/gender.png' %}">
+                        <h4> female : reading, writing 고득점</h4>
+                        <h4> male : math 고득점</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Image element - set the background image for the header in the line below-->
+        <div class="py-5 bg-image-full" style="background-image: url('https://source.unsplash.com/4ulffa6qoKA/1200x800')">
+            <!-- Put anything you want here! The spacer below with inline CSS is just for demo purposes!-->
+            <div style="height: 20rem"></div>
+        </div>
+        
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2021</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="{% static 'js/scripts.js' %}"></script>
+    </body>
+</html>
